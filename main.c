@@ -25,14 +25,15 @@ int main(void)
     // VOTRE CODE CI-DESSOUS
     // INSTRUCTIONS EXECUTEES UNE SEULE FOIS AU DEMARRAGE
     //----------------------------------------------------------
-    
+    uint8_t metre;
+    uint8_t abc;
     while(1){
-        //----------------------------------------------------------
-        // VOTRE CODE CI-DESSOUS
-        // INSTRUCTIONS EXECUTEES EN BOUCLE INDEFINIMENT
-        //----------------------------------------------------------
+        metre = ultrason_distance();
+        DELAY_milliseconds(200);
+        abc = metre;
         
     }
+      
 }
 //----------------------------------------------------------
 // FIN DU CODE
